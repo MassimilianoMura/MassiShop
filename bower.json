@@ -2,7 +2,10 @@
   "name": "projects",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5"
+    "bootstrap-sass": "~3.3.5",
+    "handlebars": "~4.0.2",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4"
   },
   "overrides": {
     "bootstrap-sass": {
