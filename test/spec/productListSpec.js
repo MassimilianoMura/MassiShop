@@ -1,5 +1,5 @@
 (function () {
-  // 'use strict';
+  'use strict';
 
   describe('It has a list of product', function () {
 
@@ -15,7 +15,7 @@
         expect(list[0].price).toEqual(42);
       });
 
-      it('should have a price for every product', function () {
+      it('should have a stock quantity for every product', function () {
         expect(list[0].quantity).toEqual(5);
       });
 
