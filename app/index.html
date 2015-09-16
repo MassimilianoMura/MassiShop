@@ -24,18 +24,21 @@
       </div>
 
       <div class="container-fluid">
-        <script id="list-items" type="text/x-handlebars-template">​
-          {{#each list}}
-            <div class="items col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
-              Category: {{ category}} </br>
-              Name: {{ name }} </br>
-              Price: {{ price }} </br>
-              Quantity: {{ quantity }}
-              <button class="addItem" class="btn" onclick="addItem({{@index}})">Buy</button>
-            </div>
-          {{/each}}
-        </script>
+        <div id="list-wrap">
+          <script id="list-items" type="text/x-handlebars-template">​
+            {{#each list}}
+              <div class="items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                Category: {{ category}} </br>
+                Name: {{ name }} </br>
+                Price: {{ price }} </br>
+                Quantity: {{ quantity }}
+                <button class="addItem" class="btn" onclick="addItem({{@index}})">Buy</button>
+              </div>
+            {{/each}}
+          </script>
+        </div>
+
       </div>
 
       <div class="footer">

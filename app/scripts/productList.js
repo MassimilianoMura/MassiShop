@@ -18,6 +18,6 @@ var list = [
  var theTemplateScript = $("#list-items").html();  
  var theTemplate = Handlebars.compile(theTemplateScript);  
 
-$(document.body).append(theTemplate ({
+$('#list-wrap').append(theTemplate ({
     list: list
 }));
