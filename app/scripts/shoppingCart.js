@@ -6,4 +6,3 @@ ShoppingCart.prototype.addItem = function(item) {
   this.cart.push(item);
 };
 
-

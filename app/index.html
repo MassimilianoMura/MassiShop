@@ -27,11 +27,12 @@
         <script id="list-items" type="text/x-handlebars-template">​
           {{#each list}}
             <div class="items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
               Category: {{ category}} </br>
               Name: {{ name }} </br>
               Price: {{ price }} </br>
-              Quantity: {{ quantity}}
-              <button class="btn">Buy</button>
+              Quantity: {{ quantity }}
+              <button class="addItem" class="btn" onclick="addItem({{@index}})">Buy</button>
             </div>
           {{/each}}
         </script>
@@ -62,6 +63,6 @@
 
     <script src="scripts/productList.js"></script>
     <script src="scripts/shoppingCart.js"></script>
-
+    <script src="scripts/main.js"></script>
   </body>
 </html>
