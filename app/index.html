@@ -14,30 +14,36 @@
   <body>
 
     <div class="container">
+
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Products</a></li>
-          <li><a href="#">Your shop basket</a></li>
+          <li><a href="#">Your shop cart</a></li>
         </ul>
         <h3 class="text-muted">MassiShop</h3>
       </div>
 
-      <div class="jumbotron">
-
+      <div class="container-fluid">
         <script id="list-items" type="text/x-handlebars-template">​
-          {{#each list}} {{ price }} {{/each}}
+          {{#each list}}
+            <div class="items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              Category: {{ category}} </br>
+              Name: {{ name }} </br>
+              Price: {{ price }} </br>
+              Quantity: {{ quantity}}
+              <button class="btn">Buy</button>
+            </div>
+          {{/each}}
         </script>
-
       </div>
-
 
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> Thanks for visit my shop</p>
       </div>
+
     </div>
 
     <script src="/bower_components/handlebars/handlebars.js"></script>
-
 
     <script src="/bower_components/jquery/dist/jquery.js"></script>
 
@@ -54,10 +60,8 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
 
-
     <script src="scripts/productList.js"></script>
-
-
+    <script src="scripts/shoppingCart.js"></script>
 
   </body>
 </html>

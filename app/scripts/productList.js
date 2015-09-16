@@ -14,8 +14,8 @@ var list = [
             ];
 
  var theTemplateScript = $("#list-items").html();  
- var theTemplate = Handlebars.compile (theTemplateScript);  
+ var theTemplate = Handlebars.compile(theTemplateScript);  
 
-$(document.body).append (theTemplate ({
+$(document.body).append(theTemplate ({
     list: list
 }));
