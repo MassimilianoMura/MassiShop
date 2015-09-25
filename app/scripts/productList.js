@@ -19,5 +19,5 @@ var list = [
  var theTemplate = Handlebars.compile(theTemplateScript);  
 
 $('#list-wrap').append(theTemplate ({
-    list: list
+    productList: list
 }));

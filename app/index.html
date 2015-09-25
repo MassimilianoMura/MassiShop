@@ -26,7 +26,7 @@
 
         <div id="list-wrap">
           <script id="list-items" type="text/x-handlebars-template">​
-            {{#each list}}
+            {{#each productList}}
               <div class="items col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 Category: {{ category}} </br>
                 Name: {{ name }} </br>
@@ -50,8 +50,21 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">Modal Header</h4>
             </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
+            <div class="modal-body">test body modal
+
+              <div id="shoppingCartList-wrap">
+                <script id="shoppingCartList-items" type="text/x-handlebars-template">​
+                  {{#each buyList}}
+                    <div class="items col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      Category: {{ category}} </br>
+                      Name: {{ name }} </br>
+                      Price: {{ price }} </br>
+                      Quantity: {{ quantity }}
+                    </div>
+                  {{/each}}
+                 </script>
+              </div>
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -84,8 +97,11 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
 
+
     <script src="scripts/productList.js"></script>
     <script src="scripts/shoppingCart.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/shoppingCartList.js"></script>
+
   </body>
 </html>
